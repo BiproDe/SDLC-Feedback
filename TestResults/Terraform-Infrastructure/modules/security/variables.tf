@@ -85,3 +85,10 @@ variable "network_acls" {
     virtual_network_subnet_ids = []
   }
 }
+
+# Monitoring
+variable "log_analytics_workspace_id" {
+  description = "The Log Analytics workspace ID for diagnostics"
+  type        = string
+  default     = null
+}
